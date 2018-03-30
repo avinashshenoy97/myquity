@@ -20,7 +20,9 @@ elif verbosity == 2 :
 
 # -------------------- Model -------------------- #
 model = Sequential()
-model.add(LSTM(4, input_shape=(1, look_back)))
+model.add(LSTM(10, input_shape=(1, look_back), return_sequences=True))
+model.add(LSTM(5, input_shape=(1, look_back), return_sequences=True))
+model.add(LSTM(5, input_shape=(1, look_back)))
 model.add(Dense(1))
 model.compile(loss='mean_squared_error', optimizer='adam')
 model.fit(train_x, train_y, epochs=100, batch_size=30, verbose=verbose)
