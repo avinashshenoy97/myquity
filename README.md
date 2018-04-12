@@ -25,7 +25,7 @@ Missing data was replaced with average of the 2 data points on either side of th
 
 ## TRAINING!
 
-The model was trained with roughly 60% of the available data.
+The model was trained with all of the data available upto, and including, 28th March 2018.
 
 ## What predictions?
 
@@ -41,9 +41,9 @@ Making predictions as described earlier, here are some of the graphs obtained :
 
 |Symbol|Graph|
 |:-:|:-:|
-|#### NSE:TCS | ![NSE:TCS](https://github.com/avinashshenoy97/myquity/blob/master/plots/Single%20LSTM/NSE:TCS.png) |
-|#### NSE:HINDPETRO|![NSE:HINDPETRO](https://github.com/avinashshenoy97/myquity/blob/master/plots/Single%20LSTM/NSE:HINDPETRO.png) |
-|#### BSE:CORALAB | ![BSE:CORALAB](https://github.com/avinashshenoy97/myquity/blob/master/plots/Single%20LSTM/BSE:CORALAB.png) |
+| NSE:TCS | ![NSE:TCS](https://github.com/avinashshenoy97/myquity/blob/master/plots/Single%20LSTM/NSE:TCS.png) |
+| NSE:HINDPETRO|![NSE:HINDPETRO](https://github.com/avinashshenoy97/myquity/blob/master/plots/Single%20LSTM/NSE:HINDPETRO.png) |
+| BSE:CORALAB | ![BSE:CORALAB](https://github.com/avinashshenoy97/myquity/blob/master/plots/Single%20LSTM/BSE:CORALAB.png) |
 
 
 ### Deep LSTM
@@ -56,13 +56,13 @@ Making predictions as described earlier, here are some of the graphs obtained :
 
 ### So far so good, right?
 
-Both models seem to have successfully predicted future values of each of the comapny's share prices. Notice that the legend only describes the colour of the `Original` values' plot. However, this colour is not seen at all, implying that the predictions exactly overlap the actual values.
+Both models seem to have successfully predicted future values of each of the comapny's share prices. Notice that the legend only describes the colour of the `Original` values' plot. All the other colours represent the predictions.
 
 ## Into the FUTURE!
 
 The last data point in the data used is `23rd March 2018`. Using a year's data upto this date, we try to predict the next year's values.
 
-Graphs!
+More graphs!
 
 #### Single Layer LSTM
 
@@ -117,11 +117,15 @@ Graphs!
 
 ### Now what?
 
-Seem's the prediction for 23rd March 2019 is insanely low. Obviously, we must take these predictions with `a pinch of salt`. Looking at the RMSE and Average error in the iPython Notebooks, we can see that predicting a whole year into the future is quite the challange, even for the deep LSTM employed here.
-
-The day these predictions were made, and committed, is 1st April 2018. On 23rd April 2018, we will know how accurate the 30-day away predictions are/were!
+The day these predictions were made, and committed, is 12th April 2018. On 23rd April 2018, we will know how accurate the 30-day away predictions are/were!
 
 ### Primary Contributor
 | | |
 | :-: | :-: |
 | <img src="https://github.com/avinashshenoy97.png" width="48"> | [Avinash Shenoy](https://github.com/avinashshenoy97) | 
+
+### License
+
+[MIT License](https://github.com/avinashshenoy97/myquity/blob/master/LICENSE)
+
+Copyright (c) 2018 Avinash Shenoy
