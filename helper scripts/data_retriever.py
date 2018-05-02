@@ -20,6 +20,8 @@ parser.add_argument('--key', type=str,
                     help='AlphaVantage API Key')
 parser.add_argument('--save', action="store_true",
                     help='Save whatever data was retrieved!')                    
+parser.add_argument('--show', action="store_true",
+                    help='Show retrieved data!')                    
 
 parser.add_argument('--prompt', action="store_true",
                     help='Prompt whether to store data for each symbol. Default action is to store.')
@@ -72,14 +74,17 @@ if args.v:
 
 # -------------------- Requests to API -------------------- #
 
+if len(args.symbols) == 0 and args.sfile is None:
+    print("Symbols missing.")
+
 for s in args.symbols:
     payload["symbol"] = s
     r = requests.get(url, params = payload)
 
     if args.v :
         print("Symbol :", s, "Request code :", r.status_code)
-        if args.vv :
-            print("Data :", r.text)
+    if args.vv or args.show:
+        print("Data :", r.text)
 
     if "Error Message" in r.text:
         print("Error for", s, "!!")

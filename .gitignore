@@ -5,3 +5,4 @@ __pycache__/
 safarisesh
 data/
 iPython Notebooks/.ipynb_checkpoints/
+temp*

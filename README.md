@@ -85,44 +85,57 @@ More graphs!
 
 #### Single Layer LSTM
 
-| Symbol | Days into the Future | Predicted Price in ₹ |
-| :----: | :----: | :-------------: |
-| NSE:TCS | 30 | 2294.201 |
-|  | 120 | 2320.8574 |
-|  | 365 | 2095.418 |
-| | | |
-| NSE:HINDPETRO | 30 | 381.549 |
-| | 120 | 289.50186 |
-| | 365 | 259.3332 |
-| | | |
-| BSE:CORALAB | 30 | 477.17975 |
-| | 120 | 792.15546 |
-| | 365 | 626.61743 |
+| Symbol | Days into the Future | Predicted Price in ₹ | Actual Price |
+| :----: | :----: | :-------------: | :-: |
+| NSE:TCS | 30 | 2294.201 | 3385.65 |
+|  | 120 | 2320.8574 | |
+|  | 365 | 2095.418 | |
+| | | | |
+| NSE:HINDPETRO | 30 | 381.549 | 306 |
+| | 120 | 289.50186 | |
+| | 365 | 259.3332 | |
+| | | | |
+| BSE:CORALAB | 30 | 477.17975 | 579 |
+| | 120 | 792.15546 | |
+| | 365 | 626.61743 | |
 
 #### Deep LSTM
 
-| Symbol | Days into the Future | Predicted Price in ₹ |
-| :----: | :----: | :-------------: |
-| NSE:TCS | 30 | 2604.8313 |
-|  | 120 | 2375.7998 |
-|  | 365 | 2315.811 |
-| | | |
-| NSE:HINDPETRO | 30 | 362.70154 |
-| | 120 | 325.5782 |
-| | 365 | 362.70154 |
-| | | |
-| BSE:CORALAB | 30 | 492.06793 |
-| | 120 | 596.0542 |
-| | 365 | 897.0001 |
+| Symbol | Days into the Future | Predicted Price in ₹ | Actual Price |
+| :----: | :----: | :-------------: | :-: |
+| NSE:TCS | 30 | 2604.8313 | 3385.65 |
+|  | 120 | 2375.7998 | |
+|  | 365 | 2315.811 | |
+| | | | |
+| NSE:HINDPETRO | 30 | 362.70154 | 306 |
+| | 120 | 325.5782 | |
+| | 365 | 362.70154 | |
+| | | | |
+| BSE:CORALAB | 30 | 492.06793 | 579 |
+| | 120 | 596.0542 | |
+| | 365 | 897.0001 | |
 
 ### Now what?
 
 The day these predictions were made, and committed, is 12th April 2018. On 23rd April 2018, we will know how accurate the 30-day away predictions are/were!
 
+## Initial Results
+
+So...initial results don't look so good. The Deep LSTM, the primary model in this repository, predicted a decline in closing price in the first 30 days. Safe to say that we were way off. However, here's the plot for `NSE:TCS`.
+
+However, most of the predictions were accurate only in the long run. Moreover, since the actual final price is much larger than
+
+![NSE:TCS](https://github.com/avinashshenoy97/myquity/blob/master/plots/Deep%20LSTM/Future/soFarSo.png)
+
+## Contributing
+
+Want to contribute? [Read Me!](https://github.com/avinashshenoy97/myquity/blob/master/CONTRIBUTING.md)
+
 ### Primary Contributor
 | | |
 | :-: | :-: |
 | <img src="https://github.com/avinashshenoy97.png" width="48"> | [Avinash Shenoy](https://github.com/avinashshenoy97) | 
+
 
 ### License
 
