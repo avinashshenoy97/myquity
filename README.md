@@ -123,9 +123,9 @@ The day these predictions were made, and committed, is 12th April 2018. On 23rd 
 
 So...initial results don't look so good. The Deep LSTM, the primary model in this repository, predicted a decline in closing price in the first 30 days. Safe to say that we were way off. However, here's the plot for `NSE:TCS`.
 
-However, most of the predictions were accurate only in the long run. Moreover, since the actual final price is much larger than
+However, we should note that most of the predictions were accurate in predicting trends only over longer time periods. Moreover, since the actual final price is much larger than any price seen in the data so far, it is unlikely that the model would have predicted it. We must factor in the trend of the price so as to allow the model to predict prices it has never seen in the data as of yet.
 
-![NSE:TCS](https://github.com/avinashshenoy97/myquity/blob/master/plots/Deep%20LSTM/Future/soFarSo.png)
+![NSE:TCS](https://github.com/avinashshenoy97/myquity/blob/master/plots/Deep%20LSTM/soFarSo.png)
 
 ## Contributing
 
